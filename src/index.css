@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hidden {
+  overflow: auto;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.messages {
+  height: calc(100vh - 100px)
+}
+.storybg{
+
+  background: linear-gradient(135deg, #ffcccc, #99c7ffbd, #ff6666, #ff3333, #5500ff69);
+}
+.instabg{
+background-image: url("./image/instabg.jpg");
+}
+
+.adminbg{
+   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url("./image/instabg.jpg");
+}
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    @apply h-full
+  }
+}
